@@ -1,0 +1,197 @@
+aliyun-oss:
+  endpoint: yourEndpoint
+  access-key-id: yourAccessKeyId
+  access-key-secret: yourAccessKeySecret
+  bucket-name: yourBucketName
+  bucket-url: yourBucketUrl
+  base-path: yourBasePath
+autocode:
+  transfer-restart: true
+  root: D:\goProject\luk-gva
+  server: /server
+  server-api: /api/v1/%s
+  server-plug: /plugin/%s
+  server-initialize: /initialize
+  server-model: /model/%s
+  server-request: /model/%s/request/
+  server-router: /router/%s
+  server-service: /service/%s
+  web: /web/src
+  web-api: /api
+  web-form: /view
+  web-table: /view
+aws-s3:
+  bucket: xxxxx-10005608
+  region: ap-shanghai
+  endpoint: ""
+  s3-force-path-style: false
+  disable-ssl: false
+  secret-id: your-secret-id
+  secret-key: your-secret-key
+  base-url: https://gin.vue.admin
+  path-prefix: github.com/flipped-aurora/gin-vue-admin/server
+captcha:
+  key-long: 6
+  img-width: 240
+  img-height: 80
+cors:
+  mode: whitelist
+  whitelist:
+    - allow-origin: example1.com
+      allow-methods: GET, POST
+      allow-headers: content-type
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers,
+        Content-Type
+      allow-credentials: true
+    - allow-origin: example2.com
+      allow-methods: GET, POST
+      allow-headers: content-type
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers,
+        Content-Type
+      allow-credentials: true
+db-list:
+  - disable: true
+    type: ""
+    alias-name: ""
+    path: ""
+    port: ""
+    config: ""
+    db-name: ""
+    username: ""
+    password: ""
+    max-idle-conns: 10
+    max-open-conns: 100
+    log-mode: ""
+    log-zap: false
+email:
+  to: xxx@qq.com
+  port: 465
+  from: xxx@163.com
+  host: smtp.163.com
+  is-ssl: true
+  secret: xxx
+  nickname: test
+excel:
+  dir: ./resource/excel/
+hua-wei-obs:
+  path: you-path
+  bucket: you-bucket
+  endpoint: you-endpoint
+  access-key: you-access-key
+  secret-key: you-secret-key
+jwt:
+  signing-key: c0a4a431-8025-4fa0-b83c-741e118d3986
+  expires-time: 7d
+  buffer-time: 1d
+  issuer: qmPlus
+local:
+  path: uploads/file
+  store-path: uploads/file
+mysql:
+  path: 127.0.0.1
+  port: "10203"
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db-name: luk_gva
+  username: root
+  # password: lukQWERTY
+  password: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: error
+  log-zap: false
+oracle:
+  path: ""
+  port: ""
+  config: ""
+  db-name: ""
+  username: ""
+  password: ""
+  max-idle-conns: 0
+  max-open-conns: 0
+  log-mode: ""
+  log-zap: false
+pgsql:
+  path: ""
+  port: ""
+  config: ""
+  db-name: ""
+  username: ""
+  password: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: ""
+  log-zap: false
+qiniu:
+  zone: ZoneHuaDong
+  bucket: ""
+  img-path: ""
+  use-https: false
+  access-key: ""
+  secret-key: ""
+  use-cdn-domains: false
+redis:
+  db: 0
+  addr: 127.0.0.1:6379
+  password: ""
+system:
+  env: develop
+  addr: 8888
+  db-type: mysql
+  oss-type: local
+  use-multipoint: false
+  use-redis: false
+  iplimit-count: 15000
+  iplimit-time: 3600
+tencent-cos:
+  bucket: xxxxx-10005608
+  region: ap-shanghai
+  secret-id: your-secret-id
+  secret-key: your-secret-key
+  base-url: https://gin.vue.admin
+  path-prefix: github.com/flipped-aurora/gin-vue-admin/server
+timer:
+  start: true
+  spec: '@daily'
+  with_seconds: false
+  detail:
+    - tableName: sys_operation_records
+      compareField: created_at
+      interval: 2160h
+    - tableName: jwt_blacklists
+      compareField: created_at
+      interval: 168h
+zap:
+  level: info
+  prefix: '[github.com/flipped-aurora/gin-vue-admin/server]'
+  format: console
+  director: log
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  max-age: 0
+  show-line: true
+  log-in-console: true
+bsc:
+  contractaddress: 0xd99d1c33f9fc3444f8101754abc46c52416550d1
+  wss: https://fluent-purple-cloud.bsc-testnet.quiknode.pro/c8a2ee98d6630afbb1d9de6a364aead6b839fd22/
+  chainId: 97
+  gasLimit: 5000000
+  apikey: KXHTFDAR9R37UX62Z4A8XSF4YKFUN7ZQF7
+  bscAddr: https://api-testnet.bscscan.com
+  luk: 0xC889452DA7480f8127C62df556A13C7D0111B90d
+  tiger: 0x6C0Ca0e132BAdAe8d2e69B2308abD20E1AD8843C
+  usdt: 0x1Beb32a6Bee76546913f6f0ef7fEE659aAF4C6bE
+  liquidity: 0x27ab23f4c78de1ac2a88c875b47be8c4da83ba45
+wallet:
+  luk: 0x8dD33b9DBe815d4Acd4bd790E3A26835c9a03EB6
+  lukPrivateKey: mVdBRG73/4nB9H5LlwAl+Mhg+PEQrJsCUsmWuGVOS02ydJSuIYDgogpDpxiu0/xCmMi1/FUNQHfOpl8nbk3HTMgErLkl/UGY
+  complex: 0x04761e90829Df2A03968ba8EdBB6cd5503e27fbA
+  contract: 0x8C150eb16B6FD45C024468Ad1815D3093ad3aDD7
+  formalities: 0xdd818AbB1C3cAe9e309918a8AB5DEA2936416dC3
+  nft: 0x0a3F192455A8fD5B4F87515CD45C162cfa4A9207
+  pledge: 0x68e3b4C136E21B3b3F847DBB5b615C881616637C
+  destroy: 0x975826f21FAEc57b603eaCa2a9301804751097Dd
+  destroyPrivateKey: DGAdpOStL8Pq/0rkJUoGeGeKPw8M+Fsecpw8c/ulifab79I3i5wsU3RwK6O+SzNlrqKuFnjcCWomGinPdN+U/HMYZHLJV9s7
+  reflow: 0x6B8E64582a406aba8D0C22c6785ce0577cAa27Fc
+  withdraw: 0x1B6d6E44718e146a9008E17E6FDB2B45B9b1aA93
+  withdrawPrivateKey: wdNBEEmctjHmkCjn30gw+NLigUdl9ECHWzho87ebaa67HQ54xsFdvqTfrs7rd6GUQCDmiB44cNkgBI9NDLeALfOiwbflWSya
+  fee: 0xD68e866Af0Bd9585e69B7b4847D3eA9a1B0cC99c
